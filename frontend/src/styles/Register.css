@@ -1,5 +1,5 @@
-.logo_vroommm{
-    width: 60%;
+.logo_vroommm {
+  width: 60%;
 }
 
 .form_register,
@@ -24,12 +24,13 @@
   margin-top: 2rem;
 }
 .register_btn {
-  margin-top: 2.8rem;
-  color: #005aff ;
-  background: none;
-  border: 2px solid #005aff ;
-  height: 2rem;
-  width: 10rem;
+  background-color: #005aff;
+  color: white;
+  min-width: 70%;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 .password_box_register {
   position: relative;
