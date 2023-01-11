@@ -1,10 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/register");
+  };
   return (
     <main>
       <header className="App-header">
-        <button type="button" className="login">
+        <button type="button" className="login" onClick={handleClick}>
           LOGIN
         </button>
         <img src={logo} className="App-logo" alt="logo" />
