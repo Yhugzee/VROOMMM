@@ -16,7 +16,7 @@ export default function Home() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <p className="welcome">
-        Bienvenue sur notre site, nous avons le véhicule qu'il vous faut.
+        Bienvenue sur Vroommm, nous avons le véhicule qu'il vous faut.
         <br />
         Nous vous proposerons un véhicule adapté en fonction de vos besoins du
         moment.
