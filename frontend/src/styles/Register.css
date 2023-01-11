@@ -1,5 +1,12 @@
 .logo_vroommm {
-  width: 60%;
+  height: auto;
+  max-width: 60%;
+  pointer-events: none;
+}
+
+a {
+  display: flex;
+  justify-content: center;
 }
 
 .form_register,
