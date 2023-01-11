@@ -95,7 +95,9 @@ export default function Register() {
             ref={passwordRef}
           />
         </div>
-        <input type="submit" value="S'enregistrer" className="register_btn" />
+        <button type="submit" className="register_btn">
+          S'enregistrer
+        </button>
       </form>
     </div>
   );
