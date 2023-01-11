@@ -5,52 +5,75 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+  align-self: center;
+}
+
+.App-logo {
+  height: auto;
+  max-width: 60%;
+  pointer-events: none;
+}
+
+.welcome {
+  margin: 1rem;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding-bottom: 7rem;
 }
 
 button {
-  font-size: calc(10px + 2vmin);
+  border: solid 3px transparent;
+  border-radius: 50%;
+  transition: border 1s ease-in-out;
+  animation: border-pulse 3s linear infinite;
+}
+
+@keyframes border-pulse {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+.login {
+  background-color: #005aff;
+  color: wheat;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.Go {
+  background-color: #005aff;
+  color: white;
+  min-width: 70%;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
 }
