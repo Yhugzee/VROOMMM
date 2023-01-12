@@ -1,13 +1,7 @@
-import { useNavigate } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import logo from "../assets/logo.png";
 
 export default function Home() {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/register");
-  };
   return (
     <main>
       <NavBar />
