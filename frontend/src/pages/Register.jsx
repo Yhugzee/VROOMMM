@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import "../styles/Register.css";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import logo from "../assets/logo.png";
+import arrow from "../assets/arrow.png";
 
 export default function Register() {
   const navigate = useNavigate();
@@ -36,6 +37,9 @@ export default function Register() {
 
   return (
     <div className="register">
+      <Link to="/">
+        <img src={arrow} alt="Retour" className="back-arrow" />
+      </Link>
       <Link to="/" className="logo">
         <img src={logo} alt="Vroommm Logo" className="logo_vroommm" />
       </Link>
