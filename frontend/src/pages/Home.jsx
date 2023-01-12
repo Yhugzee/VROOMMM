@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 import logo from "../assets/logo.png";
 
 export default function Home() {
-  return (
+ return (
     <main>
       <NavBar />
       <header className="App-header">
