@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import logo from "../assets/logo.png";
 
@@ -17,9 +18,11 @@ export default function Home() {
         <br />
         Nous vous souhaitons une bonne expérience.
       </p>
-      <button type="button" className="Go">
-        En voiture !!!
-      </button>
+      <Link to="/questions">
+        <button type="button" className="Go">
+          En voiture !!!
+        </button>
+      </Link>
     </main>
   );
 }
