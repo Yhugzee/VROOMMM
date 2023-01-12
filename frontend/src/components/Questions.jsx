@@ -11,75 +11,60 @@ function Question({ questionData, setQuestNumber, setCurrentPage }) {
             key={text}
             type="button"
             onClick={() => {
-              if (questionData.label === "Utilitaire") {
-                setQuestNumber(1);
-              }
-              if (
-                questionData.label === "Utilitaire" &&
-                questionData.answers.text === "Oui"
-              ) {
+              if (questionData.label === "Utilitaire" && text === "Oui") {
                 setCurrentPage("CarTest");
               }
               if (
                 questionData.label === "Utilitaire" &&
-                questionData.answers.text === "Non" &&
+                text === "Non" &&
                 nextQuestionId === 2
               ) {
                 setQuestNumber(2);
               }
               if (
                 questionData.label === "Passagers" &&
-                questionData.answers.text === "1" &&
+                text === "1" &&
                 nextQuestionId === 3
               ) {
                 setQuestNumber(3);
               }
               if (
                 questionData.label === "Passagers" &&
-                questionData.answers.text === "Entre 2 et 4" &&
+                text === "Entre 2 et 4" &&
                 nextQuestionId === 3
               ) {
                 setQuestNumber(3);
               }
-              if (
-                questionData.label === "Passagers" &&
-                questionData.answers.text === "5 et plus"
-              ) {
+              if (questionData.label === "Passagers" && text === "5 et plus") {
                 setCurrentPage("CarTest");
               }
               if (
                 questionData.label === "Bagages" &&
-                questionData.answers.text === "Oui" &&
+                text === "Oui" &&
                 nextQuestionId === 4
               ) {
                 setQuestNumber(4);
               }
               if (
                 questionData.label === "Bagages" &&
-                questionData.answers.text === "Non" &&
+                text === "Non" &&
                 nextQuestionId === 5
               ) {
                 setQuestNumber(5);
               }
-              if (
-                questionData.label === "SUV/BER" &&
-                questionData.answers.text === "SUV"
-              )
-                if (
-                  questionData.label === "SUV/BER" &&
-                  questionData.answers.text === "Berline"
-                ) {
+              if (questionData.label === "SUV/BER" && text === "SUV")
+                if (questionData.label === "SUV/BER" && text === "Berline") {
                   setCurrentPage("CarTest");
                 }
               if (
                 questionData.label === "Citadine/Berline" &&
-                questionData.answers.text === "Citadine"
+                text === "Citadine"
               ) {
                 setCurrentPage("CarTest");
               }
               if (
                 questionData.label === "Citadine/Berline" &&
-                questionData.answers.text === "Berline"
+                text === "Berline"
               ) {
                 setCurrentPage("CarTest");
               }
