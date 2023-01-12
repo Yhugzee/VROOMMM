@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../styles/Register.css";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import logo from "../assets/logo.png";
@@ -37,7 +37,9 @@ export default function Register() {
 
   return (
     <div className="register">
-      <img src={logo} alt="Vroommm Logo" className="logo_vroommm" />
+      <Link to="/" className="Logo_content">
+        <img src={logo} alt="Logo Vroommm" className="logo_vroommm" />
+      </Link>
       <form
         className="form_register"
         onSubmit={(e) => {
