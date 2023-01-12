@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import NavBar from "../components/NavBar";
 import logo from "../assets/logo.png";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
   };
   return (
     <main>
+      <NavBar />
       <header className="App-header">
         <button type="button" className="login" onClick={handleClick}>
           LOGIN
