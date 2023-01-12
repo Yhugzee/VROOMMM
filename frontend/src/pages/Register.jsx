@@ -36,7 +36,7 @@ export default function Register() {
 
   return (
     <div className="register">
-      <Link to="/">
+      <Link to="/" className="logo">
         <img src={logo} alt="Vroommm Logo" className="logo_vroommm" />
       </Link>
       <form
