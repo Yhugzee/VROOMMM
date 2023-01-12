@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../src/assets/logo.png";
-import "../src/styles/Login.css";
+import logo from "../assets/logo.png";
+import "../styles/Login.css";
 
 export default function Login() {
   const navigate = useNavigate();
