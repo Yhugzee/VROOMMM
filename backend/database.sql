@@ -15,14 +15,17 @@ VALUES (1, 'Hugo', 'Rodriguez', 'rodriguez.h@pm.me', 'bypass', '0605040302', 'Ad
 
 CREATE TABLE car
 (
-    id      int(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    brand   varchar(255) NOT NULL,
-    model   varchar(255) NOT NULL,
-    mileage INT          NOT NULL,
-    year    INT          NOT NULL,
-    city    varchar(255) NOT NULL,
-    price   INT(10) NOT NULL,
-    bail    INT(10) NOT NULL
+    id             int(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    brand          varchar(255)                NOT NULL,
+    model          varchar(255)                NOT NULL,
+    mileage        INT                         NOT NULL,
+    year           INT                         NOT NULL,
+    city           varchar(255)                NOT NULL,
+    price          INT(10) NOT NULL,
+    bail           INT(10) NOT NULL,
+    available      BOOLEAN      DEFAULT TRUE   NOT NULL,
+    category       varchar(255) DEFAULT 'test' NOT NULL,
+    seats_quantity INT          DEFAULT '1'    NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO car (id, brand, model, mileage, year, city, price, bail)
