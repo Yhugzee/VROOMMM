@@ -18,7 +18,7 @@ function Question({ questionData, setQuestNumber, setCurrentPage }) {
                 questionData.label === "Utilitaire" &&
                 questionData.answers.text === "Oui"
               ) {
-                setCurrentPage("Car");
+                setCurrentPage("CarTest");
               }
               if (
                 questionData.label === "Utilitaire" &&
@@ -45,7 +45,7 @@ function Question({ questionData, setQuestNumber, setCurrentPage }) {
                 questionData.label === "Passagers" &&
                 questionData.answers.text === "5 et plus"
               ) {
-                setCurrentPage("Car");
+                setCurrentPage("CarTest");
               }
               if (
                 questionData.label === "Bagages" &&
@@ -69,19 +69,19 @@ function Question({ questionData, setQuestNumber, setCurrentPage }) {
                   questionData.label === "SUV/BER" &&
                   questionData.answers.text === "Berline"
                 ) {
-                  setCurrentPage("Car");
+                  setCurrentPage("CarTest");
                 }
               if (
                 questionData.label === "Citadine/Berline" &&
                 questionData.answers.text === "Citadine"
               ) {
-                setCurrentPage("Car");
+                setCurrentPage("CarTest");
               }
               if (
                 questionData.label === "Citadine/Berline" &&
                 questionData.answers.text === "Berline"
               ) {
-                setCurrentPage("Car");
+                setCurrentPage("CarTest");
               }
             }}
           >
