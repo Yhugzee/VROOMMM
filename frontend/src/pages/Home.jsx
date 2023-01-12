@@ -12,9 +12,6 @@ export default function Home() {
     <main>
       <NavBar />
       <header className="App-header">
-        <button type="button" className="login" onClick={handleClick}>
-          LOGIN
-        </button>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <p className="welcome">

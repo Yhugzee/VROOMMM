@@ -58,14 +58,6 @@ button {
   }
 }
 
-.login {
-  background-color: #005aff;
-  color: wheat;
-  padding: 0.5rem 2rem;
-  font-weight: bold;
-  align-self: flex-end;
-}
-
 .Go {
   background-color: #005aff;
   color: white;
