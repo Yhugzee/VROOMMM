@@ -4,6 +4,12 @@
   pointer-events: none;
 }
 
+.back-arrow {
+  max-width: 35px;
+  position: absolute;
+  left: 0;
+}
+
 .logo {
   display: flex;
   justify-content: center;
