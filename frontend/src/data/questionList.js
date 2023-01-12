@@ -1,3 +1,5 @@
+import "../styles/Questions.css";
+
 const allData = [
   {
     id: 1,

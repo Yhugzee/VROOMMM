@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import "../styles/Questions.css";
 
 function Question({ questionData, setQuestNumber, setCurrentPage }) {
   return (
@@ -8,11 +9,12 @@ function Question({ questionData, setQuestNumber, setCurrentPage }) {
       <div className="question-genre">
         {questionData.answers.map(({ text, nextQuestionId }) => (
           <button
+            className="button_question"
             key={text}
             type="button"
             onClick={() => {
               if (questionData.label === "Utilitaire" && text === "Oui") {
-                setCurrentPage("CarTest");
+                setCurrentPage("Utilitaire");
               }
               if (
                 questionData.label === "Utilitaire" &&
@@ -36,7 +38,7 @@ function Question({ questionData, setQuestNumber, setCurrentPage }) {
                 setQuestNumber(3);
               }
               if (questionData.label === "Passagers" && text === "5 et plus") {
-                setCurrentPage("CarTest");
+                setCurrentPage("Utilitaire");
               }
               if (
                 questionData.label === "Bagages" &&
@@ -52,21 +54,23 @@ function Question({ questionData, setQuestNumber, setCurrentPage }) {
               ) {
                 setQuestNumber(5);
               }
-              if (questionData.label === "SUV/BER" && text === "SUV")
-                if (questionData.label === "SUV/BER" && text === "Berline") {
-                  setCurrentPage("CarTest");
-                }
+              if (questionData.label === "SUV/BER" && text === "SUV") {
+                setCurrentPage("SUV");
+              }
+              if (questionData.label === "SUV/BER" && text === "Berline") {
+                setCurrentPage("Berline");
+              }
               if (
                 questionData.label === "Citadine/Berline" &&
                 text === "Citadine"
               ) {
-                setCurrentPage("CarTest");
+                setCurrentPage("Citadine");
               }
               if (
                 questionData.label === "Citadine/Berline" &&
                 text === "Berline"
               ) {
-                setCurrentPage("CarTest");
+                setCurrentPage("Berline");
               }
             }}
           >

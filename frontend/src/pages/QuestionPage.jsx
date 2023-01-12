@@ -4,6 +4,11 @@ import logo from "@assets/logo.png";
 import Question from "../components/Questions";
 import allData from "../data/questionList";
 
+import Utility from "../carlist/Utility";
+import Smart from "../carlist/Smart";
+import Sedan from "../carlist/Sedan";
+import SUV from "../carlist/SUV";
+
 function QuestionPage() {
   const [questNumber, setQuestNumber] = useState(1);
   const [currentPage, setCurrentPage] = useState(0);
@@ -22,7 +27,10 @@ function QuestionPage() {
             setCurrentPage={setCurrentPage}
           />
         )}
-        {currentPage === "CarTest" && <p>car test !!!</p>}
+        {currentPage === "Utilitaire" && <Utility />}
+        {currentPage === "Citadine" && <Smart />}
+        {currentPage === "Berline" && <Sedan />}
+        {currentPage === "SUV" && <SUV />}
       </div>
     </>
   );
