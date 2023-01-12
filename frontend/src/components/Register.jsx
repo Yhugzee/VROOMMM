@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../src/styles/Register.css";
+import "../styles/Register.css";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import logo from "../src/assets/logo.png";
+import logo from "../assets/logo.png";
 
 export default function Register() {
   const navigate = useNavigate();

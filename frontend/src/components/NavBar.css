@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-nav {
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: 100px;
+  margin-left: 1rem;
+}
+
+.login-button {
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: #005aff;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 30px;
+}
+
+.login {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 20px !important;
+}
