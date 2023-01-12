@@ -4,12 +4,12 @@ CREATE TABLE user
     firstname    varchar(255) NOT NULL,
     lastname     varchar(255) NOT NULL,
     email        varchar(255) NOT NULL,
-    password     TEXT         NOT NULL,
-    phone_number INT          NOT NULL,
+    hashedPassword     varchar(255) NOT NULL,
+    phone_number varchar(10)          NOT NULL,
     role         VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO user (id, firstname, lastname, email, password, phone_number, role)
+INSERT INTO user (id, firstname, lastname, email, hashedPassword, phone_number, role)
 VALUES (1, 'Hugo', 'Rodriguez', 'rodriguez.h@pm.me', 'bypass', '0605040302', 'Admin'),
        (2, 'Jules', 'Riquier', 'JulesRiquier@armyspy.com', 'bypass2', '0122110954', 'User');
 

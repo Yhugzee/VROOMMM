@@ -9,7 +9,7 @@ export default function Register() {
   const [showPassword, setShowPassword] = useState("password");
   const firstNameRef = useRef();
   const lastNameRef = useRef();
-  const userNameRef = useRef();
+  const phoneNumberRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
 
@@ -17,10 +17,10 @@ export default function Register() {
     const dataPost = {
       firstname: firstNameRef.current.value,
       lastname: lastNameRef.current.value,
-      username: userNameRef.current.value,
+      phone_number: phoneNumberRef.current.value,
       email: emailRef.current.value,
       password: passwordRef.current.value,
-      role_id: 3,
+      role: 3,
     };
     fetch("http://localhost:5000/users", {
       method: "POST",
@@ -58,9 +58,9 @@ export default function Register() {
         />
         <input
           type="text"
-          placeholder="Pseudo"
+          placeholder="Numéro de téléphone"
           className="username_register"
-          ref={userNameRef}
+          ref={phoneNumberRef}
         />
         <input
           type="email"
