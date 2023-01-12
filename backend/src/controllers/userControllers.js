@@ -1,6 +1,6 @@
 const models = require("../models");
 
-const browse = (req, res) => {
+const getUsers = (req, res) => {
   models.user
     .findAll()
     .then(([rows]) => {
@@ -11,8 +11,7 @@ const browse = (req, res) => {
       res.sendStatus(500);
     });
 };
-
-const read = (req, res) => {
+const getOneUser = (req, res) => {
   models.user
     .find(req.params.id)
     .then(([rows]) => {
@@ -27,8 +26,7 @@ const read = (req, res) => {
       res.sendStatus(500);
     });
 };
-
-const edit = (req, res) => {
+const editUser = (req, res) => {
   const user = req.body;
 
   // TODO validations (length, format...)
@@ -49,12 +47,10 @@ const edit = (req, res) => {
       res.sendStatus(500);
     });
 };
-
-const add = (req, res) => {
+const addUser = (req, res) => {
   const user = req.body;
 
   // TODO validations (length, format...)
-
   models.user
     .insert(user)
     .then(([result]) => {
@@ -66,7 +62,7 @@ const add = (req, res) => {
     });
 };
 
-const destroy = (req, res) => {
+const destroyUser = (req, res) => {
   models.user
     .delete(req.params.id)
     .then(([result]) => {
@@ -82,10 +78,29 @@ const destroy = (req, res) => {
     });
 };
 
+const getUserByEmailWithPasswordAndPassToNext = (req, res, next) => {
+  models.user
+    .getUserByEmail(req.body)
+    .then(([user]) => {
+      if (user[0] != null) {
+        [req.user] = user;
+
+        next();
+      } else {
+        res.sendStatus(401);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error retrieving data from database");
+    });
+};
+
 module.exports = {
-  browse,
-  read,
-  edit,
-  add,
-  destroy,
+  getUsers,
+  getOneUser,
+  editUser,
+  addUser,
+  destroyUser,
+  getUserByEmailWithPasswordAndPassToNext,
 };
