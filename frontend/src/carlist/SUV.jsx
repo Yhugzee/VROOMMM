@@ -17,6 +17,9 @@ function SUV() {
         <p>Cylindrée : 1 496 cc</p>
         <p>Vitesse maximum : 190 km/h</p>
         <p>Charge maximale : 575 kg</p>
+        <p>Caution : 500 €</p>
+        <p>Prix / jour : 90 €</p>
+        <button type="button">Louer moi</button>
       </div>
     </div>
   );

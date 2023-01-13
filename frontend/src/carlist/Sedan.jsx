@@ -17,6 +17,9 @@ function Sedan() {
         <p>Cylindrée : 1 998 cc</p>
         <p>Vitesse maximum : 225 km/h</p>
         <p>Charge maximale : 520 kg</p>
+        <p>Caution : 500 €</p>
+        <p>Prix / jour : 90 €</p>
+        <button type="button">Louer moi</button>
       </div>
     </div>
   );
