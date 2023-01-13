@@ -19,7 +19,7 @@ function Sedan() {
         <p>Charge maximale : 520 kg</p>
         <p>Caution : 500 €</p>
         <p>Prix / jour : 90 €</p>
-        <button type="button">Louer moi</button>
+        <button type="button">Louez moi</button>
       </div>
     </div>
   );
