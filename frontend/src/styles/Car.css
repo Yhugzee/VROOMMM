@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Righteous&family=Signika+Negative&display=swap");
+
 .img {
   height: 100%;
   width: 100%;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -17,4 +19,15 @@
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-family: "Signika Negative", sans-serif;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: "Cantarell", sans-serif;
 }

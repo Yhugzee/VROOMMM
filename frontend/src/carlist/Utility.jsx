@@ -11,7 +11,7 @@ function Utility() {
         alt="Citroën Ë-Jumper"
       />
       <div className="features">
-        <h2>Caractéristiques principales</h2>
+        <h2 className="subtitle">Caractéristiques principales</h2>
         <p>Nombre de place : 9</p>
         <p>Nombre de cylindre : 4</p>
         <p>Cylindrée : 1 997 cc</p>

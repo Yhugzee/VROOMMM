@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Righteous&family=Signika+Negative&display=swap");
+
 .logo_vroommm {
   height: auto;
   max-width: 60%;
@@ -37,13 +39,18 @@
   margin-top: 2rem;
 }
 .register_btn {
+  font-family: "Righteous", cursive;
   background-color: #005aff;
   color: white;
   min-width: 70%;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 3rem;
+  border: solid 4px transparent;
+  border-radius: 30px;
+  transition: border 1s ease-in-out;
+  animation: border-pulse 3s linear infinite;
 }
 .password_box_register {
   position: relative;
@@ -54,4 +61,8 @@
   bottom: 10%;
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.sign_in {
+  font-family: "Righteous", cursive;
 }

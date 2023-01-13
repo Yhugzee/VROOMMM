@@ -83,11 +83,15 @@ export default function Login() {
           />
         </div>
 
-        <input type="submit" value="Connexion" className="sign_in" />
+        <button type="submit" className="sign_in">
+          Connexion
+        </button>
         {errorInput && <p className="error">Email ou mot de passe incorrect</p>}
       </form>
       <Link to="/register">
-        <input type="submit" value="Créer un compte" className="sign_in" />
+        <button type="submit" className="sign_in">
+          Créer un compte
+        </button>
       </Link>
     </div>
   );

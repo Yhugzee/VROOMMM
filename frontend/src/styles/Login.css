@@ -34,16 +34,6 @@
   padding-left: 1rem;
 }
 
-.sign_in {
-  margin: 2rem 0 1.5rem 0;
-  color: #005aff;
-  background: none;
-  border-radius: 30px;
-  border: 2px solid #005aff;
-  height: 2rem;
-  width: 10rem;
-}
-
 .logo_vroommm {
   width: 75%;
   height: auto;
@@ -55,9 +45,11 @@
   justify-content: center;
 }
 .form_login {
+  gap: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 4rem;
 }
 .error {
   text-align: center;
