@@ -11,7 +11,7 @@ function Sedan() {
         alt="BMW Série 3"
       />
       <div className="features">
-        <h2>Caractéristiques principales</h2>
+        <h2 className="subtitle">Caractéristiques principales</h2>
         <p>Nombre de place : 5</p>
         <p>Nombre de cylindre : 4</p>
         <p>Cylindrée : 1 998 cc</p>

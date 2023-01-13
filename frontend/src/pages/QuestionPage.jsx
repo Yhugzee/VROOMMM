@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "@assets/logo.png";
+import logo from "../assets/logo.png";
 import Question from "../components/Questions";
 import allData from "../data/questionList";
+import "../styles/Questions.css";
 
 import Utility from "../carlist/Utility";
 import Smart from "../carlist/Smart";
