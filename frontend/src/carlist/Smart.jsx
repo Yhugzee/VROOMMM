@@ -17,6 +17,9 @@ function Smart() {
         <p>Cylindrée : 999 cc</p>
         <p>Vitesse maximum : 160 km/h</p>
         <p>Charge maximale : 75 kg</p>
+        <p>Caution : 500 €</p>
+        <p>Prix / jour : 90 €</p>
+        <button type="button">Louer moi</button>
       </div>
     </div>
   );

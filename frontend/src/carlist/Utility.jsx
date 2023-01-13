@@ -17,6 +17,9 @@ function Utility() {
         <p>Cylindrée : 1 997 cc</p>
         <p>Vitesse maximum : 150 km/h</p>
         <p>Charge maximale : 1890 kg</p>
+        <p>Caution : 500 €</p>
+        <p>Prix / jour : 90 €</p>
+        <button type="button">Louer moi</button>
       </div>
     </div>
   );
